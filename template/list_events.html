@@ -1,0 +1,49 @@
+<nav class="nav justify-content-center">
+    <li class="nav-item search-link">
+        <a class="nav-link" href="#!/">Go to search page</a>
+    </li>
+    <li class="nav-item search-link">
+        <a class="nav-link" href='{{printUrl}}' target="_blank">Book tickets</a>
+    </li>
+    <li class="nav-item search-link">
+        <a class="nav-link" href='template/maps.html' target="_blank">Navigate to event venue</a>
+    </li>
+    <li class="search-link list-details">
+        <a class="nav-link" href ng-click="sendEventAgain()">Back to results</a>
+    </li>
+</nav>
+
+<section id="event-details-display">
+    <h1 class="heading" style="font-family: 'Bungee Inline', cursive;">{{printName}}</h1>
+    <h3 class="sub-heading category-name-yellow">[ {{printVenue}} - {{printCity}} - {{printCountry}} ]</h3>
+    <ul class="list-details">
+        <li class="sub-heading list-item-grey">
+            <i class="fas fa-chevron-circle-right"></i> DATE  {{printDate}} <i class="fas fa-chevron-circle-left"></i>
+        </li>
+        <li class="sub-heading list-item-grey">
+            <i class="fas fa-chevron-circle-right"></i> TIME {{printTime}} <i class="fas fa-chevron-circle-left"></i>
+        </li></li>
+        <li class="sub-heading list-item-grey">
+            <i class="fas fa-chevron-circle-right"></i> PRICE {{printMinPrice}} {{printMaxPrice}} {{printCurrency}} <i
+                class="fas fa-chevron-circle-left"></i>
+        </li>
+    </ul>
+    <h4 class="sub-heading">{{printInfo}}</h4>
+    <h4 class="important-info">{{printNote}}</h4>
+    <!--<ul class="list-details">
+        <li class="sub-heading list-item-yellow">To book tickets, <a href='{{printUrl}}' target="_blank"class="display-link">click here</a>
+        </li>
+        <li class="sub-heading list-item-yellow">To find how to reach event venue, <a href='template/maps.html' target="_blank" class="display-link">click
+                here</a>
+        </li>
+        <li class="sub-heading list-item-yellow">To go back to results page, <a href ng-click="sendEventAgain()" class="display-link">click here</a>
+        </li>
+
+    </ul>-->
+
+
+    <div ng-repeat="eachImage in printImage">
+        <img ng-src="{{eachImage.url}}" class="image-display">
+    </div>
+
+</section>

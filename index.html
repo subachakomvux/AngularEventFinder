@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Stylish" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body-event">
+    <header class="header-event">
+        <h1 class="font-bungee">Easy event search engine <span style="font-size:7rem"><i class="fas fa-search-location"></i></span></h1>
+    </header>
+   <!-- <nav>
+        <li class="search-link list-details" >
+            <a href="#!/">Go to search page</a>
+        </li>
+    </nav>-->
+
+    <main ng-view></main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+    <script src=""></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="services.js"></script>
+</body>
+<footer class="footer-event">
+    &copy 2018 Subarna Chakrabarti
+</footer>
+
+</html>

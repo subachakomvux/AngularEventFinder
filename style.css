@@ -1,0 +1,114 @@
+/* Also used bootstrap styling*/
+/* Listed below is Subarna's custom stylesheet */
+/* styling header */
+.header-event {    
+    background-color: rgb(51, 61, 50);
+    color:yellow;
+    text-align:center;
+    padding: 2rem;
+    margin:0;
+}
+/* styling body */
+.body-event {
+    background-color: rgb(145, 145, 145);
+    font-family: 'Stylish', sans-serif;
+}
+/* styling footer */
+.footer-event {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color: rgb(51, 61, 50);
+    color:yellow;
+    font-size:2rem;
+}
+/* font used for main headings */
+.font-bungee {
+    font-family: 'Bungee Inline', cursive;
+}
+#event-details-display {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding:2rem;
+}
+#event-display {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+#event-search-display {
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin:0;
+    font-size: 3rem;
+    
+}
+.sub-heading {
+    padding: 1rem;
+    margin:0;
+    background-color: black;
+    color: white;
+}
+.category-name-yellow {
+    color:yellow
+}
+.display-link {
+    color: yellow;
+}
+.image-display  {
+    width:40rem;height:40rem;border:black 0.5rem solid;
+}
+.important-info {
+    color: rgb(202, 7, 7);
+    background-color: rgb(145, 145, 145);
+    padding:1rem;
+}
+td{
+    font-size: 2rem;
+}
+/* styling know-more-about-each-event link */
+.know-link { /* styling for anchor tags for know about event link */
+    background-color:rgb(255, 255, 89);
+    padding:0.4rem;
+}
+.list-details {
+    list-style-type: none;    
+}
+/* styling date, time and price for each event */
+.list-item-yellow {
+    font-size: 1.5rem;
+    color:yellow;
+}
+.list-item-grey{
+    font-size: 2rem;
+    color:rgb(145, 145, 145);
+    display:inline;
+}
+/* styling anchor tags and hyperlinks */
+a {
+    text-decoration: none;
+    font-size:2rem;
+} 
+a:hover {
+    color:rgb(255, 44, 79);
+    text-decoration: none;
+}
+.search-link {
+    text-decoration: none;
+    list-style-type: none;   
+    float: right;
+    background-color: rgb(255, 255, 89);
+}
+    
+.search-link a {
+    display: block;
+    padding: 1rem;
+      
+}

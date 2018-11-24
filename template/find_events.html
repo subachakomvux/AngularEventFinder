@@ -1,0 +1,19 @@
+<nav class="nav justify-content-center">
+    <li class="nav-item search-link">
+        <a class="nav-link" href="#!/">Go to search page</a>
+    </li>
+</nav>
+<h1 class="heading">List of events for {{printCountry}}</h1>
+<section id="event-display">
+    <form ng-submit="showDetails(inputId)">
+        <table class="table table-dark">
+            <tr ng-repeat="printEvent in displayData">
+                <td style="color:antiquewhite"><strong>{{printEvent.name}}</strong></td>
+                <td style="color:pink"> {{printEvent.classifications[0].segment.name}}
+                    [{{printEvent.classifications[0].genre.name}}] </td>
+                <td><a ng-click='sendEvent(printEvent.id)' href class="know-link">Know more</td>
+                <td><a href='{{printEvent.url}}' target="_blank">Book tickets</a></td>
+            </tr>
+        </table>
+    </form>
+</section>
